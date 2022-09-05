@@ -42,4 +42,8 @@ This script writes into the file ls_cwd_content the result of the command ls -la
 **File created: 9-duplicate_last_line**
 This script duplicates the last line of file iacta
 
+## 10. No more javascript
+**File created: 10-no_more_js**
+This script deletes all regular .js files
+
 
