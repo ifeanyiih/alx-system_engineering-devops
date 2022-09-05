@@ -65,4 +65,8 @@ This script takes a list of words as input and prints only words that appear exa
 **File created: 14-findthatword**
 This script displays lines containing the pattern "root" from the file /etc/passwd
 
+## 15. Count that word
+**File created: 15-countthatword**
+This script Displays the number of lines that contain the pattern “bin” in the file /etc/passwd
+
 
