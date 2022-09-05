@@ -46,4 +46,10 @@ This script duplicates the last line of file iacta
 **File created: 10-no_more_js**
 This script deletes all regular .js files
 
+## 11. Don't just count your directories, make your directories count
+**File created: 11-directories**
+Write a script that counts the number of directories and sub-directories in the current directory.
+- The current and parent directories should not be taken into account
+- Hidden directories should be counted
+
 
