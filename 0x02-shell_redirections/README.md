@@ -38,4 +38,8 @@ This scripts creates a file named: '\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)', whi
 **File created: 8-cwd_state**
 This script writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
 
+## 9. Duplicate last line
+**File created: 9-duplicate_last_line**
+This script duplicates the last line of file iacta
+
 
