@@ -26,4 +26,8 @@ This script prints the last 10 lines of the file /etc/passwd
 **File created: 5-firstlines**
 This script prints the first 10 lines of the file /etc/passwd
 
+## 6. Line #2
+**File created: 6-third_line**
+This script prints the third line of the file iacta
+
 
