@@ -61,4 +61,8 @@ A script that displays the 10 newest files in the current directory
 This script takes a list of words as input and prints only words that appear exactly once.
 - words are sorted
 
+## 14. It must be in that file
+**File created: 14-findthatword**
+This script displays lines containing the pattern "root" from the file /etc/passwd
+
 
