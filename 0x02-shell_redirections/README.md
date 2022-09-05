@@ -18,4 +18,8 @@ The script when run, displays the contents of /etc/passwd
 **File created: 3-twofiles**
 This script prints the output of files /etc/passwd and /etc/hosts to standard output
 
+## 4. Last lines of file
+**File created: 4-lastlines**
+This script prints the last 10 lines of the file /etc/passwd
+
 
