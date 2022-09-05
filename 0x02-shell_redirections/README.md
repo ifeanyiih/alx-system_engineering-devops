@@ -14,3 +14,8 @@ The script when run prints "(Ôo)'
 **File created: 2-hellofile**
 The script when run, displays the contents of /etc/passwd
 
+## 3. What about 2
+**File created: 3-twofiles**
+This script prints the output of files /etc/passwd and /etc/hosts to standard output
+
+
