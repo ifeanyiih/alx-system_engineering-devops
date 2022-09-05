@@ -94,4 +94,9 @@ This script: removes all letters c and C from input.
 **File created: 21-reverse**
 This script reverses input lines character wise.
 
+## 22. DJ Cut Killer
+**File created: 22-users_and_homes**
+This script  displays all users and their home directories, sorted by users.
+Based on the the /etc/passwd file
+
 
