@@ -86,4 +86,8 @@ This script: Display all lines of the file /etc/ssh/sshd_config starting with a 
 **File created: 19-AZ**
 This script: Replace all characters A and c from input to Z and e respectively.
 
+## 20. Without C, you would live in hiago
+**File created: 20-hiago**
+This script: removes all letters c and C from input.
+
 
