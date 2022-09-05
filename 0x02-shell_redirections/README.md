@@ -34,4 +34,8 @@ This script prints the third line of the file iacta
 **File created: 7-file**
 This scripts creates a file named: '\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)', which contains the text "Best School"
 
+## 8. Save the current state of directory
+**File created: 8-cwd_state**
+This script writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
+
 
