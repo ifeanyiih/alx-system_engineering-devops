@@ -30,4 +30,8 @@ This script prints the first 10 lines of the file /etc/passwd
 **File created: 6-third_line**
 This script prints the third line of the file iacta
 
+## 7. It is a good file that cuts iron without making a noise
+**File created: 7-file**
+This scripts creates a file named: '\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)', which contains the text "Best School"
+
 
