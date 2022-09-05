@@ -73,4 +73,8 @@ This script Displays the number of lines that contain the pattern “bin” in t
 **File created: 16-whatsnext**
 This script: Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
 
+## 17. I hate bins
+**File created: 17-hidethisword**
+This script: Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
+
 
