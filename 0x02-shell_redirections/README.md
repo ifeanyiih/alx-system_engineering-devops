@@ -56,4 +56,9 @@ Write a script that counts the number of directories and sub-directories in the 
 **File created: 12-newest_files**
 A script that displays the 10 newest files in the current directory
 
+## 13. Being unique is better than being perfect
+**File created: 13-unique**
+This script takes a list of words as input and prints only words that appear exactly once.
+- words are sorted
+
 
