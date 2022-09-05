@@ -52,4 +52,8 @@ Write a script that counts the number of directories and sub-directories in the 
 - The current and parent directories should not be taken into account
 - Hidden directories should be counted
 
+## 12. What's new
+**File created: 12-newest_files**
+A script that displays the 10 newest files in the current directory
+
 
