@@ -90,4 +90,8 @@ This script: Replace all characters A and c from input to Z and e respectively.
 **File created: 20-hiago**
 This script: removes all letters c and C from input.
 
+## 21. esreveR
+**File created: 21-reverse**
+This script reverses input lines character wise.
+
 
