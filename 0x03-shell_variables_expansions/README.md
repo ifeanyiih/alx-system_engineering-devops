@@ -19,4 +19,6 @@ Below is a list of files in this directory
 	this script creates a new global variable
 - **8-true_knowledge**:
 	this script prints the result of adding 128 with an environment variable TRUEKNOWLEDGE
+- **9-divide_and_rule**:
+	this script prints the result of division between two environment variables
 
