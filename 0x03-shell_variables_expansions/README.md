@@ -33,4 +33,6 @@ Below is a list of files in this directory
 	this script prints a decimal number as hexadecimal
 - **101-rot13**:
 	this script encodes and decodes text using rot13 encryption.
+- **103-water_and_stir**:
+	this sum some input and prints the output
 
