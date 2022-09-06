@@ -27,4 +27,6 @@ Below is a list of files in this directory
 	this script prints a binary number in decimal form
 - **12-combinations**:
 	this script prints all possible combinations of two letters except oo.
+- **13-print_float**:
+	this script prints numbers with two decimal places
 
