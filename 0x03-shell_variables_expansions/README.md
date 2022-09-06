@@ -13,4 +13,6 @@ Below is a list of files in this directory
 	this script lists environment variables
 - **5-local_variables**:
 	this script list all local variables
+- **6-create_local_variable**:
+	this script creates a new local variable
 
