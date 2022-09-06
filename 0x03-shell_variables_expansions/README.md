@@ -25,4 +25,6 @@ Below is a list of files in this directory
 	the script prints the result of the exponent of an enviroment variable
 - **11-binary_to_decimal**:
 	this script prints a binary number in decimal form
+- **12-combinations**:
+	this script prints all possible combinations of two letters except oo.
 
