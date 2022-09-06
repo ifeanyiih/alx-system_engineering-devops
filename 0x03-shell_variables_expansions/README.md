@@ -1,4 +1,4 @@
-# Shell Variables Expansions
+## Shell Variables Expansions
 Below is a list of files in this directory
 
 - **0-alias**:
@@ -11,4 +11,6 @@ Below is a list of files in this directory
 	this script counts the number of directories in PATH
 - **4-global_variables**:
 	this script lists environment variables
+- **5-local_variables**:
+	this script list all local variables
 
