@@ -9,4 +9,6 @@ Below is a list of files in this directory
 	this script adds `/action` to $PATH
 - **3-paths**:
 	this script counts the number of directories in PATH
+- **4-global_variables**:
+	this script lists environment variables
 
