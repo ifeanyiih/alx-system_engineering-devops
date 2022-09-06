@@ -21,4 +21,6 @@ Below is a list of files in this directory
 	this script prints the result of adding 128 with an environment variable TRUEKNOWLEDGE
 - **9-divide_and_rule**:
 	this script prints the result of division between two environment variables
+- **10-love_exponent_breath**:
+	the script prints the result of the exponent of an enviroment variable
 
