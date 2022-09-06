@@ -29,4 +29,6 @@ Below is a list of files in this directory
 	this script prints all possible combinations of two letters except oo.
 - **13-print_float**:
 	this script prints numbers with two decimal places
+- **100-decimal_to_hexadecimal**:
+	this script prints a decimal number as hexadecimal
 
