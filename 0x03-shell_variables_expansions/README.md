@@ -17,4 +17,6 @@ Below is a list of files in this directory
 	this script creates a new local variable
 - **7-create_global_variable**:
 	this script creates a new global variable
+- **8-true_knowledge**:
+	this script prints the result of adding 128 with an environment variable TRUEKNOWLEDGE
 
