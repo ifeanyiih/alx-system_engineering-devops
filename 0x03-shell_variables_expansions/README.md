@@ -31,4 +31,6 @@ Below is a list of files in this directory
 	this script prints numbers with two decimal places
 - **100-decimal_to_hexadecimal**:
 	this script prints a decimal number as hexadecimal
+- **101-rot13**:
+	this script encodes and decodes text using rot13 encryption.
 
