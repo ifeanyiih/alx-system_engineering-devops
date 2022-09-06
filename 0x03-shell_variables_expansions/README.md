@@ -15,4 +15,6 @@ Below is a list of files in this directory
 	this script list all local variables
 - **6-create_local_variable**:
 	this script creates a new local variable
+- **7-create_global_variable**:
+	this script creates a new global variable
 
