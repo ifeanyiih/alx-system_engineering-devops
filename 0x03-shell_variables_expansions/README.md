@@ -7,4 +7,6 @@ Below is a list of files in this directory
 	a script that prints `hello user` where user is the current Linux user
 - **2-path**:
 	this script adds `/action` to $PATH
+- **3-paths**:
+	this script counts the number of directories in PATH
 
