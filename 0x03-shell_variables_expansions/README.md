@@ -35,4 +35,6 @@ Below is a list of files in this directory
 	this script encodes and decodes text using rot13 encryption.
 - **103-water_and_stir**:
 	this sum some input and prints the output
+- **102-odd**:
+	this script prints only odd lines, starting from the first line
 
