@@ -6,5 +6,5 @@
 
 names=$(ls);
 for name in $names;do
-	echo "$name";
+	echo "$name" | cut -d - -f 1 --complement;
 done
