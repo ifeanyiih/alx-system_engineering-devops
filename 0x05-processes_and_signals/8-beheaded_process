@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script kills the process '7-highlander'
+# shellcheck disable=2046
+kill -9 $(pgrep -f "bash ./7*")
