@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script writes 'I am alive!' indefinitely to stdout
+
+while ((1));do
+	echo "I am alive!" | cat >> /tmp/my_process;
+	sleep 2
+done

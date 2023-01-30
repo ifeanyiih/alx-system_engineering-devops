@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Script manages 'manage_my_process' script
+# shellcheck disable=SC2046
+
+if [[ $1 == 'start' ]];then
+	sudo ./manage_my_process
+	sudo touch /var/run/my_process.pid
+	cat > /var/run/my_process.pid < pgrep -f "bash ./manage_*"; 
+	echo "manage_my_process started";
+elif [[ $1 == 'stop' ]];then
+	sudo kill $(cat /var/run/my_process.pid) &
+	sudo rm /var/run/my_process.pid;
+	echo "manage_my_process stopped";
+elif [[ $1 == 'restart' ]];then
+	pid=$(pgrep -f "bash ./manage*");
+	if [[ $pid != " " ]];then
+		sudo kill $(cat /var/run/my_process.pid) &
+		sudo rm /var/run/my_process.pid;
+		sudo ./manage_my_process &
+		sudo touch /var/run/my_process.pid;
+		cat > /var/run/my_process.pid < pgrep -f "bash ./manage*";
+		echo "manage_my_process restarted";
+	fi
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
