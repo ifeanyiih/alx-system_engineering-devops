@@ -1,3 +1,8 @@
 #!/usr/bin/env ruby
 #Script matches a regular expression
-puts ARGV[0].scan(/[A-Z]/).join
+print ARGV[0].scan(/from:([^\]]*\b)/).join
+print ','
+print ARGV[0].scan(/to:([^\]]*\b)/).join
+print ','
+print ARGV[0].scan(/flags:([^\]]*\b)/).join
+puts
