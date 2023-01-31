@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 #Script matches a regular expression
-print ARGV[0].scan(/from:([^\]]*\b)/).join
-print ','
-print ARGV[0].scan(/to:([^\]]*\b)/).join
-print ','
-print ARGV[0].scan(/flags:([^\]]*\b)/).join
-puts
+output = ARGV[0].scan(/from:([^\]]*\b)|to:([^\]]*\b)|flags:([^\]]*\b)/).concat()
+all = []
+output.each do |i|
+  all.concat(i)
+end
+all.select! {|i| i != nil}
+puts all.join(",")
