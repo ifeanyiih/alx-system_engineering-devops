@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-# A ruby regular expression script
-puts ARGV[0].scan(/School/).join
+#Script contains the regular expression that will match a case(s)
+puts ARGV[0].scan(/school/).join
