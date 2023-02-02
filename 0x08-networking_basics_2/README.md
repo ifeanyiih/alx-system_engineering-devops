@@ -5,4 +5,7 @@ networking basics
 Below is a list of files in this directory
 
 ---
-
+- 0-change_your_home_IP
+- 1-show_attached_IPs
+- 100-port_listening_on_localhost
+- README.md
