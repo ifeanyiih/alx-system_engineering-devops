@@ -6,4 +6,4 @@ cd /var/www/html/;
 touch index.html
 echo "Hello World!" >> index.html
 
-service nginx restart
+nginx -s reload
