@@ -6,3 +6,4 @@ echo "Hello World!" >> index.html
 sudo mv index.html /var/www/html/
 
 sudo nginx -s reload
+sudo service nginx restart
