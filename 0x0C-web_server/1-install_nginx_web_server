@@ -3,17 +3,5 @@
 apt-get update
 apt-get -y install nginx
 echo "Hello World!" > /var/www/html/index.html
-SERVER_CONFIG=\
-"server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
-	root /var/www/html;
-	index index.html index.htm index.nginx-debian.html;
-	server_name _;
-	location / {
-		try_files \$uri \$uri/ =404;
-	}
-}"
-echo "$SERVER_CONFIG" > /etc/nginx/nginx.conf
 ngnix -s reload
 service nginx restart
