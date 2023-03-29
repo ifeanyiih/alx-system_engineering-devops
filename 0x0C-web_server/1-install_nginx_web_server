@@ -8,7 +8,7 @@ SERVER_CONFIG=\
 "server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
-	root /var/www/html;
+	root /var/www/html/;
 	index index.html index.htm index.nginx-debian.html;
 	server_name _;
 	location / {
@@ -20,4 +20,3 @@ bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
 ufw allow 'Nginx HTTP'
 
 ngnix -s reload
-service nginx restart
