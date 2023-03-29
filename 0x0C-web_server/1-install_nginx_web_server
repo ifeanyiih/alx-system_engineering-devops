@@ -2,7 +2,5 @@
 # Install nginx web server
 apt-get update
 apt-get -y install nginx
+echo "Hello World!" | sudo tee /var/www/html/index.html
 service nginx start
-echo "Hello World!" | tee /var/www/html/index.html
-service nginx restart
-nginx -s reload
