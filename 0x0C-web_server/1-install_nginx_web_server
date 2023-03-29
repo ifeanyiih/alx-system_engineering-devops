@@ -3,6 +3,12 @@
 apt-get update
 apt-get -y install nginx
 echo "Hello World!" > /var/www/html/index.html
-ufw allow 'Nginx HTTP'
-ufw reload
+directive="
+server {
+  listen 80;
+  root /var/www/html/
+}
+"
+echo $directive >> /etc/nginx/nginx.conf
+ngnix -s reload
 service nginx restart
