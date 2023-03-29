@@ -17,6 +17,7 @@ SERVER_CONFIG=\
 }"
 
 bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
+ufw allow 'Nginx HTTP'
 
 ngnix -s reload
 service nginx restart
