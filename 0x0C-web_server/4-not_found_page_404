@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Use the rewrite directive to perform a permanent redirect
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo sed -i 's/server_name _\;/server_name _\;\n\terror_page 404 \/error404.html\;/g' /etc/nginx/sites-enabled/default
+echo "Ceci n'est pas une page" > error404.html
+sudo mv error404.html /var/www/html/
+sudo service nginx restart
