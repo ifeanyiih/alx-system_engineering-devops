@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Use the rewrite directive to perform a permanent redirect
+sudo sed -i 's/server_name _\;/server_name _\;\n\trewrite \/redirect_me https:\/\/www.youtube.com\/ permanent\;/g' /etc/nginx/sites-enabled/default
+sudo nginx -s reload
