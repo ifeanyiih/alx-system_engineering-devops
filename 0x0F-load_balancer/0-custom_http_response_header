@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Adds a Custom Header to the nginx configuration
+me="uname -n | grep -oE web.+"
+sudo sed -i 's/server_name _\;/server_name _\;\n\t# Custom Header: by Ifeanyichukwu\n\tadd_header X-Served-By '"$me"' always;/g' /etc/nginx/sites-enabled/default
+sudo service nginx restart
