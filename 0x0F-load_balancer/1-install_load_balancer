@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy
 sudo apt-get update
+sudo apt-get -y install --no-install-recommends software-properties-common
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.6
+sudo apt-get -y install haproxy=2.6.\*
+cd /etc/default/
+sudo chmod 777 haproxy
+sudo printf "%s\n" "ENABLED=1" >> haproxy
+sudo chmod 644 haproxy
 cd /etc/haproxy
 sudo cp haproxy.cfg haproxy.cfg.orig
 sudo chmod 777 haproxy.cfg
