@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy
 sudo apt-get update
-sudo apt-get install --no-install-recommends software-properties-common
-sudo add-apt-repository ppa:vbernat/haproxy-2.6
+sudo apt-get -y install --no-install-recommends software-properties-common
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.6
 sudo apt-get -y install haproxy=2.6.\*
+sudo cd /etc/haproxy
+sudo cp haproxy.cfg haproxy.cfg.orig
+sudo printf %s "frontend haproxy-main
+    bind *:80
+    option forwardfor  
+    default_backend nginx_webservers    
+
+backend nginx_webservers
+    balance roundrobin
+    server websvr1	18.207.207.66 check
+    server websvr2	54.90.27.97 check" >> haproxy.cfg
+cd
