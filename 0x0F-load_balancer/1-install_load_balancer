@@ -18,8 +18,8 @@ printf "\n%s\n" "frontend haproxy-main
 
 backend nginx_webservers
     balance roundrobin
-    server websvr1	18.207.207.66:80 check
-    server websvr2	54.90.27.97:80 check" | sudo tee -a haproxy.cfg
+    server web-01	18.207.207.66:80 check
+    server web-02	54.90.27.97:80 check" | sudo tee -a haproxy.cfg
 sudo chmod 644 haproxy.cfg;
 cd || exit;
 sudo service haproxy restart;
