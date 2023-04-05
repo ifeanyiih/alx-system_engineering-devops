@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy
-sudo apt-get update
-sudo apt-get -y install --no-install-recommends software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy-2.6
-sudo apt-get -y install haproxy=2.6.\*
-cd /etc/default/
-sudo chmod 777 haproxy
-sudo printf "%s\n" "ENABLED=1" >> haproxy
-sudo chmod 644 haproxy
-cd /etc/haproxy
-sudo cp haproxy.cfg haproxy.cfg.orig
-sudo chmod 777 haproxy.cfg
-sudo printf "\n%s\n" "frontend haproxy-main
+sudo apt-get update;
+sudo apt-get -y install --no-install-recommends software-properties-common;
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.6;
+sudo apt-get -y install haproxy=2.6.\*;
+cd /etc/default/ || exit;
+sudo chmod 777 haproxy;
+printf "%s\n" "ENABLED=1" | sudo tee -a haproxy;
+sudo chmod 644 haproxy;
+cd /etc/haproxy || exit;
+sudo cp haproxy.cfg haproxy.cfg.orig;
+sudo chmod 777 haproxy.cfg;
+printf "\n%s\n" "frontend haproxy-main
     bind *:80
     option forwardfor  
     default_backend nginx_webservers    
@@ -19,7 +19,7 @@ sudo printf "\n%s\n" "frontend haproxy-main
 backend nginx_webservers
     balance roundrobin
     server websvr1	18.207.207.66:80 check
-    server websvr2	54.90.27.97:80 check" >> haproxy.cfg
-sudo chmod 644 haproxy.cfg
-cd
-sudo service haproxy restart
+    server websvr2	54.90.27.97:80 check" | sudo tee -a haproxy.cfg
+sudo chmod 644 haproxy.cfg;
+cd || exit;
+sudo service haproxy restart;
