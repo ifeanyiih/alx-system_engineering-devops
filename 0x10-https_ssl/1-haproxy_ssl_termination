@@ -1,0 +1,9 @@
+frontend haproxy-main
+	bind *:443 ssl crt /etc/letsencrypt/live/www.ifeanyichukw.tech/fullchain.pem
+	option forwardfor
+	default_backend nginx_webservers
+
+backend nginx_webservers
+	balance roundrobin
+	server web-01	18.207.207.66:80 check
+	server web-02	54.90.27.97:80 check
