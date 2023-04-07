@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Prints information about a given domain and sub-domain
+
+# function to process only domain
+processDomain () {
+		read -r record_type IP<<<"$(dig "www.$1" | grep -A1 'ANSWER SECTION:' | awk 'NR==2 {print $4, $5}')"
+		echo "The subdomain www is a $record_type record and points to $IP"
+		read -r record_type IP<<<"$(dig "lb-01.$1" | grep -A1 'ANSWER SECTION:' | awk 'NR==2 {print $4, $5}')"
+		echo "The subdomain lb-01 is a $record_type record and points to $IP"
+		read -r record_type IP<<<"$(dig "web-01.$1" | grep -A1 'ANSWER SECTION:' | awk 'NR==2 {print $4, $5}')"
+		echo "The subdomain web-01 is a $record_type record and points to $IP"
+		read -r record_type IP<<<"$(dig "web-02.$1" | grep -A1 'ANSWER SECTION:' | awk 'NR==2 {print $4, $5}')"
+		echo "The subdomain web-02 is a $record_type record and points to $IP"
+		exit 0;
+}
+
+# function to process sub-domain
+processSubDomain () {
+		read -r record_type IP<<<"$(dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk 'NR==2 {print $4, $5}')"
+		echo "The subdomain $2 is a $record_type record and points to $IP"
+		exit 0;
+}
+
+if [ -n "$2" ]; then
+	processSubDomain "$1" "$2";
+else
+	processDomain "$1";
+fi
