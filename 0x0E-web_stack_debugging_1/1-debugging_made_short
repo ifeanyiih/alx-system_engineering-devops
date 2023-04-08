@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Using what you did for task #0, make your fix short and sweet.
-sudo nginx -s reload
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo nginx -s reload
 sudo service nginx stop
