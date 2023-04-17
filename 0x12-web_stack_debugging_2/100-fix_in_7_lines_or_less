@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs Nginx as Nginx
+# shellcheck disable=SC2117
+su nginx
+sudo service nginx start
