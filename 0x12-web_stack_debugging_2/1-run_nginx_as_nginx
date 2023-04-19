@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Runs Nginx as Nginx
-# shellcheck disable=SC2117
-su nginx
+sed -i 's/\[Service\]/\[Service\]\nUser=nginx/g' /usr/lib/systemd/system/nginx.service
+sed -i 's/listen 80 default_server\;/listen 8080 default_server\;/g' /etc/nginx/sites-enabled;
+sed -i 's/listen \[::\]:80 default_server\;/listen \[::\]:8080 default_server\;/g' /etc/nginx/sites-enabled;
 sudo service nginx start
