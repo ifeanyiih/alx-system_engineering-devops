@@ -3,4 +3,7 @@
 sed -i 's/\[Service\]/\[Service\]\nUser=nginx/g' /usr/lib/systemd/system/nginx.service
 sed -i 's/listen 80 default_server\;/listen 8080 default_server\;/g' /etc/nginx/sites-enabled;
 sed -i 's/listen \[::\]:80 default_server\;/listen \[::\]:8080 default_server\;/g' /etc/nginx/sites-enabled;
+sudo setfacl -R -m u:nginx:rwx /var/log/nginx
+sudo setfacl -m u:nginx:rwx /run
+sudo chown -R nginx:nginx /usr/share/nginx/
 sudo service nginx start
