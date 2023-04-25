@@ -21,6 +21,7 @@ if __name__ == '__main__':
             userTodo.append(todo.copy())
 
     with open('{}.csv'.format(userId), 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile, quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        writer = csv.writer(csvfile, quotechar='"', quoting=csv.QUOTE_ALL)
         for todo in userTodo:
-            writer.writerow([userId, user['username'], todo['completed'], todo['title']])
+            writer.writerow(
+                [userId, user['username'], todo['completed'], todo['title']])
