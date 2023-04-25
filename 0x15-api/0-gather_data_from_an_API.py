@@ -24,7 +24,7 @@ if __name__ == '__main__':
         if todo['completed']:
             completed = completed + 1
 
-    print('Employee {} is done with task({}/{}):'
+    print('Employee {} is done with tasks({}/{}):'
           .format(user['name'], completed, len(userTodo)))
     for todo in userTodo:
         if todo['completed']:
