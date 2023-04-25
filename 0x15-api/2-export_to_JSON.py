@@ -18,11 +18,11 @@ if __name__ == '__main__':
     userTodo = []
     for todo in todos:
         if todo['userId'] == user['id']:
-           task = {}
-           task['task'] = todo['title']
-           task['completed'] = todo['completed']
-           task['username'] = user['username']
-           userTodo.append(task)
+            task = {}
+            task['task'] = todo['title']
+            task['completed'] = todo['completed']
+            task['username'] = user['username']
+            userTodo.append(task)
     taskObj = {"{}".format(userId): userTodo}
 
     with open('{}.json'.format(userId), 'w') as file:
