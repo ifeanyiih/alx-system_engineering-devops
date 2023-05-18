@@ -16,3 +16,6 @@ Your web infrastructure is already serving web pages via Nginx that you installe
 - Your Bash script must pass Shellcheck (version 0.3.7-5~ubuntu16.04.1 via apt-get) without any error
 - The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 - The second line of all your Bash scripts should be a comment explaining what is the script doing
+
+## Gunicorn
+To bind Gunicorn to different ports for different applications, you'll need to create two systemd services for both of them.
