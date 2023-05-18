@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Gracefully restart a gunicorn process
-kill -HUP $(ps -C gunicorn fch -o pid | head -n 1)
+pid=$(ps -C gunicorn fch -o pid | head -n 1)
+kill -HUP "$pid"
