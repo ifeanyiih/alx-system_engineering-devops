@@ -2,7 +2,7 @@
 
 exec { 'fix':
 provider => shell,
-command  => 'sed -i "s/15/4096/g" /etc/default/nginx'
+command  => 'sed -i "s/ULIMIT.*/ULIMIT=\"-n 4096\"/" /etc/default/nginx'
 }
 
 exec {'restart':
