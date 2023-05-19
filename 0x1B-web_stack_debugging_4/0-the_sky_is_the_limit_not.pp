@@ -1,13 +1,13 @@
 # fix Too many files open error to enable nginx recieve 2000 request, 100 at a time
 
-exec { 'fix':
-provider => shell,
-command  => 'sudo sed -i "s/ULIMIT.*/ULIMIT=\"-n 4096\"/" /etc/default/nginx'
+exec { 'increase ULIMIT':
+command => 'sudo sed -i "s/ULIMIT.*/ULIMIT=\"-n 4096\"/" /etc/default/nginx',
+path    => 'usr/local/bin/:bin/'
 }
 
-exec {'restart':
-provider => shell,
-command  => 'sudo service nginx restart'
+exec {'restart nginx':
+command => 'sudo service nginx restart',
+path    => '/etc/init.d/'
 }
 
 
