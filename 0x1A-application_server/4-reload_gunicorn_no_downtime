@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # Gracefully restart a gunicorn process
-pid=$(pgrep gunicorn)
-kill -HUP "$pid"
+pkill -HUP gunicorn
